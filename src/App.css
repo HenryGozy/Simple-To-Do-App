@@ -1,0 +1,206 @@
+.Tcont{
+  background-color: rgb(30,30,30);
+  width: 100%;
+  height: 100%;
+  max-width: 550px;
+  max-height:600px;
+  border-radius:10px;
+  padding-top: 20px;
+}
+
+.ToodHeader{
+  color:rgb(255, 69, 37);
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+}
+.Tcont h1{
+  font-size: 30px;
+  font-weight: 500;
+  text-align:center;
+}
+
+.Tsont{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-top:30px;
+  padding:20px;
+}
+
+.Tsont form{
+  display: flex;
+  column-gap: 5px;
+}
+
+.Tsont form input[type="text"]{
+  flex-grow:1 ;
+  padding: 10px 20px;
+  background-color:rgb(25,25,25);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.499);
+  color: white;
+  border: none;
+  border:solid rgba(255, 70, 37, 0.395) 1px;
+}
+
+.Tsont form input[type="text"]::placeholder{
+ color: whitesmoke;
+ letter-spacing: 1px;
+}
+.Tsont button[type="submit"]{
+  background-color: transparent;
+padding: 0px 20px;
+background-color: rgb(255, 69, 37);
+color: white;
+border: none;
+}
+
+.list-container{
+ display: flex;
+ flex-direction: column-reverse;
+}
+
+.list-container ul .taskContent{
+  width: 100%;
+  list-style:none;
+  padding: 10px 0px;
+  font-size: 13px;
+  display:  flex;
+  align-self: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 30px;
+  color:lightgrey;
+  line-height: 20px;
+  }
+
+  .statusComplete{
+    position: absolute;
+    top:-25px;
+    color: rgb(255, 245, 245);
+    font-size: 11px;
+    background-color:forestgreen;
+    padding: 3px 5px;
+    border-radius:5px;  
+    letter-spacing: 1px;  
+
+  }
+  .statusPendig{
+    position: absolute;
+    top:-25px;
+    color: rgb(255, 245, 245);
+    font-size: 11px;
+    background-color:rgb(0, 97, 194);
+    padding: 3px 5px;
+    border-radius:5px;
+    letter-spacing: 1px;  
+  }
+  .statusComplete i, .statusPendig i{
+    margin-left: 5px;
+  }
+
+  
+.list-container .ulTAsk{
+overflow-y: scroll;
+height: 300px;
+}
+
+.list-container ul li .tdot{
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 5px;
+}
+.list-container ul li .tdot:hover {
+background-color:grey;
+}
+
+.list-container .edit{
+  position: absolute;
+  right:60px;
+  top:0px;
+  display: flex;
+  flex-direction: column;
+  row-gap:5px;
+  width: max-content;
+  backdrop-filter: blur(10px);
+  background-color: rgba(128, 128, 128, 0.323);
+  box-shadow:  0 3px 3px rgba(0, 0, 0, 0.423);
+}
+
+.list-container .edit li{ 
+  padding: 0;
+  padding: 5px 10px;
+  width: 100%;
+  list-style: none;
+
+}
+.list-container .edit li:hover{ 
+  background-color: rgba(211, 211, 211, 0.168);
+  cursor: pointer;
+}
+
+
+.fromDisplay{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(25, 25, 25, 0.645);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.fromDisplay form{
+  position: relative;
+  height: 100%;
+  max-width:max-content;
+  max-height:max-content;
+  background-color: rgb(25,25,25);
+  display: flex; align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.623);
+  border-radius: 10px;
+  padding: 70px 30px;
+}
+.Anne{
+display: flex;
+align-items: center;
+}
+ #updateTextArea{
+width: 400px;
+min-width: 500px;
+max-width:500px;
+max-height: 100px;
+padding: 10px;
+border: solid;
+}
+.fromDisplay form input[type="text"]::placeholder{
+color: white;
+font-weight: 500;
+
+}
+.fromDisplay form button[type="submit"]{
+  background-color:tomato;
+  color: whitesmoke;
+  font-size: 15px;
+  padding:10px 20px;
+  border:none; border-radius: 5px;
+  margin-left: 10px ;
+}
+
+.cancel{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right:10px;
+  top:10px;
+  background-color: lightgrey;
+  border:none;
+  border-radius: 5px;
+}
